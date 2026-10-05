@@ -1,0 +1,22 @@
+{
+  "model": "Autoformer",
+  "mechanisms": [
+    "series_decomposition",
+    "auto_correlation",
+    "direct_horizon_head",
+    "day_level_correction"
+  ],
+  "P": 36900,
+  "E": 12,
+  "seed": 0,
+  "use_covariates": true,
+  "val_rmse_mean": 59.43656170718622,
+  "clean_start_rmse_mean": 59.069,
+  "pred_len": 168,
+  "time_idx_first": 43657,
+  "time_idx_last": 43824,
+  "n_values": 168,
+  "prediction_min": 11.041786193847656,
+  "prediction_max": 261.02313232421875,
+  "prediction_mean": 118.60726928710938
+}

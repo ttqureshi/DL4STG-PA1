@@ -1,26 +1,38 @@
 # DL4STG Assignment 1 (AI651 / Fall 2026)
 
-Public repository for Assignment 1.
+Muhammad Tayyab Tahir Qureshi, roll number 25280024.
 
-## Contents
+The writeup for both tasks is [`report.pdf`](report.pdf). The source is [`report.tex`](report.tex).
 
-- `Task1/` : `Assignment1.ipynb`, `harness/`, `requirements.txt`, and `results/` from a `PA1_PRESET=full` run on CUDA
-- `report/` : LaTeX source and PDF for the Task 1 responses
+## Layout
 
-## How to run Task 1
+- `report.pdf` and `report.tex` sit at the root. This is the report to upload.
+- `Task1/` is the forecasting notebook, the harness, and the full-run tables and figures.
+- `Task2/` is the 168-step forecast. The submitted line is `Task2/outputs/submission_168.txt`. `P` and `E` are in `Task2/outputs/manifest.json`.
+
+## Task 1
 
 ```bash
 cd Task1
 python -m venv .venv
-# Windows: .venv\Scripts\Activate.ps1
-# Linux/macOS: source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-Set `PA1_PRESET=full` for report evidence (the submitted notebook setup cell already does this). Use `smoke` only while debugging.
+Open `Assignment1.ipynb` and run all cells. The setup cell uses `PA1_PRESET=full`.
 
-Open `Assignment1.ipynb` and run all cells.
+## Task 2
 
-## Note
+The course CSVs are not in this repository. Place these three files where the notebook can see them:
 
-Task 2 (leaderboard) is not included in this repository package.
+- `student_train.csv`
+- `student_test.csv`
+- `optional_external_data.csv`
+
+`Task2.ipynb` looks in `../Question 2 - Leaderboard/Data`, then in `/content/data`.
+
+```bash
+cd Task2
+python -m pip install -r requirements.txt
+```
+
+Open `Task2.ipynb` and run all cells.

@@ -3,9 +3,12 @@ __pycache__/
 *.pyc
 .DS_Store
 .ipynb_checkpoints/
-report/*.aux
-report/*.log
-report/*.out
-report/*.toc
+*.aux
+*.log
+*.out
+*.toc
 **/checkpoints/
 *.pt
+student_train.csv
+student_test.csv
+optional_external_data.csv
